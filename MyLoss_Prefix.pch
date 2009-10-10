@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MyLoss' target in the 'MyLoss' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
