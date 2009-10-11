@@ -19,6 +19,7 @@
 - (IBAction)addExercise:(NSButton *)sender;
 - (IBAction)addFood:(NSButton *)sender;
 - (IBAction)gotoToday:(NSButton *)sender;
+- (IBAction)dateChanged:(NSDatePicker *)sender;
 
 - (void)reset: (NSObject *)sender;
 @end

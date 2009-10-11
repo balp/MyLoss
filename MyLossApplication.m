@@ -7,7 +7,7 @@
 //
 
 #import "MyLossApplication.h"
-
+#import "TodayHandler.h"
 static MyLossApplication *sharedMyLossApplicationDelegate = nil;
 
 @implementation MyLossApplication
@@ -19,6 +19,7 @@ static MyLossApplication *sharedMyLossApplicationDelegate = nil;
 - (void) setTodayHandler: (TodayHandler *) inst {
 	[MyTodayHandler release];
 	MyTodayHandler = [inst retain];
+	[MyTodayHandler reset:self];
 }
 
 

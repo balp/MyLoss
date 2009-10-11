@@ -7,13 +7,16 @@
 //
 
 #import "MyLossAppDelegate.h"
+#import "MyLossApplication.h"
+#import "TodayHandler.h"
 
 @implementation MyLossAppDelegate
 
 @synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// Insert code here to initialize your application 
+
+	[[[MyLossApplication sharedInstance] getTodayHandler] reset:self];
 }
 
 @end
