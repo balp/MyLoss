@@ -12,6 +12,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		AA100B6510848A2300FBFBF4 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA100B6410848A2300FBFBF4 /* PreferenceController.m */; };
+		AA100B6810848AE800FBFBF4 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA100B6610848AE800FBFBF4 /* Preferences.xib */; };
 		AA33653310822DE20093B8FD /* TodayHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AA33653210822DE20093B8FD /* TodayHandler.m */; };
 		AA33656F1082421A0093B8FD /* MyLossApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = AA33656E1082421A0093B8FD /* MyLossApplication.m */; };
 		AA6D2B091081471A002FA693 /* TodayPage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6D2B081081471A002FA693 /* TodayPage.m */; };
@@ -30,6 +32,9 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* MyLoss-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MyLoss-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MyLoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA100B6310848A2300FBFBF4 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		AA100B6410848A2300FBFBF4 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		AA100B6710848AE800FBFBF4 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
 		AA33653110822DE20093B8FD /* TodayHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayHandler.h; sourceTree = "<group>"; };
 		AA33653210822DE20093B8FD /* TodayHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayHandler.m; sourceTree = "<group>"; };
 		AA33656D1082421A0093B8FD /* MyLossApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLossApplication.h; sourceTree = "<group>"; };
@@ -53,6 +58,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AA100B6310848A2300FBFBF4 /* PreferenceController.h */,
+				AA100B6410848A2300FBFBF4 /* PreferenceController.m */,
 				AA6D2B071081471A002FA693 /* TodayPage.h */,
 				AA6D2B081081471A002FA693 /* TodayPage.m */,
 				AA33656D1082421A0093B8FD /* MyLossApplication.h */,
@@ -99,6 +106,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				AA100B6610848AE800FBFBF4 /* Preferences.xib */,
 			);
 			name = MyLoss;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				AA100B6810848AE800FBFBF4 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +200,7 @@
 				AA6D2B091081471A002FA693 /* TodayPage.m in Sources */,
 				AA33653310822DE20093B8FD /* TodayHandler.m in Sources */,
 				AA33656F1082421A0093B8FD /* MyLossApplication.m in Sources */,
+				AA100B6510848A2300FBFBF4 /* PreferenceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +221,14 @@
 				1DDD58150DA1D0A300B32029 /* English */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AA100B6610848AE800FBFBF4 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA100B6710848AE800FBFBF4 /* English */,
+			);
+			name = Preferences.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

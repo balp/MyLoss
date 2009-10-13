@@ -7,11 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class PreferenceController;
 
 @interface MyLossAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
+	PreferenceController *preferenceController;
 }
 
+-(IBAction)showPreferencePanel: (id)sender;
 @property (assign) IBOutlet NSWindow *window;
 
 @end
