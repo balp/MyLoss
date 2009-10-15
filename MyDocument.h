@@ -1,14 +1,15 @@
 //
-//  main.m
+//  MyDocument.h
 //  MyLoss
 //
 //  Created by Anders Arnholm on 2009-10-15.
 //  Copyright 2009 Anders Arnholm. All rights reserved.
 //
 
+
 #import <Cocoa/Cocoa.h>
 
-int main(int argc, char *argv[])
+@interface MyDocument : NSDocument
 {
-    return NSApplicationMain(argc, (const char **) argv);
 }
+@end
