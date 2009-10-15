@@ -14,6 +14,10 @@
 		8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		AA058DFD10876A9600DEC202 /* Day.m in Sources */ = {isa = PBXBuildFile; fileRef = AA058DFC10876A9600DEC202 /* Day.m */; };
+		AA058E0010876E9800DEC202 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = AA058DFF10876E9800DEC202 /* Food.m */; };
+		AA058E05108770E700DEC202 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = AA058E04108770E700DEC202 /* Exercise.m */; };
+		AA058E081087721E00DEC202 /* Consumed.m in Sources */ = {isa = PBXBuildFile; fileRef = AA058E071087721E00DEC202 /* Consumed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,14 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* MyLoss-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MyLoss-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* MyLoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA058DFB10876A9600DEC202 /* Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Day.h; sourceTree = "<group>"; };
+		AA058DFC10876A9600DEC202 /* Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Day.m; sourceTree = "<group>"; };
+		AA058DFE10876E9800DEC202 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		AA058DFF10876E9800DEC202 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		AA058E03108770E700DEC202 /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise.h; sourceTree = "<group>"; };
+		AA058E04108770E700DEC202 /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercise.m; sourceTree = "<group>"; };
+		AA058E061087721E00DEC202 /* Consumed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Consumed.h; sourceTree = "<group>"; };
+		AA058E071087721E00DEC202 /* Consumed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Consumed.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +98,15 @@
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AA058E061087721E00DEC202 /* Consumed.h */,
+				AA058E071087721E00DEC202 /* Consumed.m */,
+				AA058E03108770E700DEC202 /* Exercise.h */,
+				AA058E04108770E700DEC202 /* Exercise.m */,
 				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
+				AA058DFB10876A9600DEC202 /* Day.h */,
+				AA058DFC10876A9600DEC202 /* Day.m */,
+				AA058DFE10876E9800DEC202 /* Food.h */,
+				AA058DFF10876E9800DEC202 /* Food.m */,
 				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
 			);
 			name = Classes;
@@ -181,6 +201,10 @@
 			files = (
 				8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				AA058DFD10876A9600DEC202 /* Day.m in Sources */,
+				AA058E0010876E9800DEC202 /* Food.m in Sources */,
+				AA058E05108770E700DEC202 /* Exercise.m in Sources */,
+				AA058E081087721E00DEC202 /* Consumed.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
