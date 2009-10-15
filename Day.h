@@ -18,6 +18,7 @@
 @interface Day : NSObject {
 	NSMutableArray *consumed;
 	NSMutableArray *exercised;
+	double weight;
 	double energyBudget;
 }
 
@@ -25,8 +26,8 @@
 - (double)energyBudget;
 - (double)energyConsumed;
 - (double)exercise;
-- (double)netEnergyLeft;
-- (double)engeryLeft;
+- (double)netEnergyUsed;
+- (double)energyLeft;
 
 - (void)insertObject:(Consumed *)food inConsumedAtIndex:(int) index;
 - (void)removeObjectFromConsumedAtIndex:(int)index;
@@ -38,4 +39,6 @@
 
 
 
+- (double) weight;
+- (void) setWeight: (double) newValue;
 @end

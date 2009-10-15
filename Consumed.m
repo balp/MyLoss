@@ -30,4 +30,8 @@
   ammounth = newValue;
 }
 
+- (double)energy {
+	return 0.0;
+}
+
 @end

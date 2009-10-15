@@ -20,4 +20,5 @@
 - (void) setWhat: (Food *) newValue;
 - (double) ammounth;
 - (void) setAmmounth: (double) newValue;
+- (double)energy;
 @end

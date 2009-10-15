@@ -9,7 +9,17 @@
 #import "MyDocument.h"
 
 @implementation MyDocument
+- (IBAction)addExercise:(id)sender {
+    
+}
 
+- (IBAction)addFood:(id)sender {
+    
+}
+
+- (IBAction)gotoToday:(id)sender {
+    
+}
 - (id)init
 {
     self = [super init];
@@ -61,6 +71,16 @@
 		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
 	}
     return YES;
+}
+
+- (IBAction)dateChanged:(id)sender
+{
+	NSLog(@"dateChanged");
+}
+
+- (IBAction)weightChanged:(id)sender
+{
+	NSLog(@"weightChanged");
 }
 
 @end
