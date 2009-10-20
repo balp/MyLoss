@@ -39,4 +39,21 @@
   energy = newValue;
 }
 
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[aCoder encodeObject:name forKey:@"name"];
+	[aCoder encodeDouble:duration forKey:@"duration"];
+	[aCoder encodeDouble:energy forKey:@"energy"];
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super init];
+	[self setName:[aDecoder decodeObjectForKey:@"name"]];
+	[self setDuration:[aDecoder decodeDoubleForKey:@"duration"]];
+	[self setEnergy:[aDecoder decodeDoubleForKey:@"energy"]];
+	return self;
+}
+
+
 @end

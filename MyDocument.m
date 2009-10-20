@@ -7,6 +7,7 @@
 //
 
 #import "MyDocument.h"
+#import "Day.h"
 
 @implementation MyDocument
 - (IBAction)addExercise:(id)sender {
@@ -18,15 +19,13 @@
 }
 
 - (IBAction)gotoToday:(id)sender {
-    
+	[self viewDate:[NSDate date]];
 }
 - (id)init
 {
     self = [super init];
     if (self) {
-    
-        // Add your subclass-specific initialization here.
-        // If an error occurs here, send a [self release] message and return nil.
+		days = [[NSMutableDictionary alloc] init];
     
     }
     return self;
@@ -43,6 +42,8 @@
 {
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
+	[self viewDate:[NSDate date]];
+
 }
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
@@ -76,11 +77,41 @@
 - (IBAction)dateChanged:(id)sender
 {
 	NSLog(@"dateChanged");
+	[self viewDate:[date dateValue]];
 }
 
 - (IBAction)weightChanged:(id)sender
 {
 	NSLog(@"weightChanged");
+	Day *d = [days objectForKey:[date dateValue]];
+	if (d == nil) {
+		d = [[Day alloc] init];
+		[days setObject:d forKey:[date dateValue]];
+	}
+	[d setWeight:[weight doubleValue]];
+}
+
+- (void)viewDate:(NSDate *)newDate {
+	[date setDateValue:newDate];
+	Day *d = [days objectForKey:newDate];
+	if (d != nil) {
+		// IBOutlet NSTextField *consumedEnergy;
+		[consumedEnergy setDoubleValue:[d energyConsumed]];
+		// IBOutlet NSLevelIndicator *energyBar;
+		[energyBar setDoubleValue:[d energyConsumed]];
+		[energyBar setCriticalValue:([d energyBudget] + [d exercise])];
+		// IBOutlet NSTextField *energyBudget;
+		[energyBudget setDoubleValue:[d energyBudget]];
+		// IBOutlet NSTextField *exersiceEnergy;
+		[exersiceEnergy setDoubleValue:[d exercise]];
+		// IBOutlet NSTextField *message;
+		[message setStringValue:[NSString stringWithFormat:@"You have %lf left today.",
+								 [d energyLeft]]];
+		// IBOutlet NSTextField *netEnergy;
+		[netEnergy setDoubleValue:[d netEnergyUsed]];
+		// IBOutlet NSTextField *weight;
+		[weight setDoubleValue:[d weight]];
+	}
 }
 
 @end

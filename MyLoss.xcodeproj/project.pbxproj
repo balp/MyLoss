@@ -18,6 +18,9 @@
 		AA058E0010876E9800DEC202 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = AA058DFF10876E9800DEC202 /* Food.m */; };
 		AA058E05108770E700DEC202 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = AA058E04108770E700DEC202 /* Exercise.m */; };
 		AA058E081087721E00DEC202 /* Consumed.m in Sources */ = {isa = PBXBuildFile; fileRef = AA058E071087721E00DEC202 /* Consumed.m */; };
+		AA058F1E108B4C2600DEC202 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA058F1D108B4C2600DEC202 /* PreferenceController.m */; };
+		AA058F23108B87A900DEC202 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA058F21108B87A900DEC202 /* Preferences.xib */; };
+		AA197E00108D2B35003CD04E /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA197DFF108D2B35003CD04E /* AppController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,11 @@
 		AA058E04108770E700DEC202 /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercise.m; sourceTree = "<group>"; };
 		AA058E061087721E00DEC202 /* Consumed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Consumed.h; sourceTree = "<group>"; };
 		AA058E071087721E00DEC202 /* Consumed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Consumed.m; sourceTree = "<group>"; };
+		AA058F1C108B4C2600DEC202 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		AA058F1D108B4C2600DEC202 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		AA058F22108B87A900DEC202 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
+		AA197DFE108D2B35003CD04E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		AA197DFF108D2B35003CD04E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,14 +108,18 @@
 			children = (
 				AA058E061087721E00DEC202 /* Consumed.h */,
 				AA058E071087721E00DEC202 /* Consumed.m */,
+				AA197DFE108D2B35003CD04E /* AppController.h */,
+				AA197DFF108D2B35003CD04E /* AppController.m */,
 				AA058E03108770E700DEC202 /* Exercise.h */,
 				AA058E04108770E700DEC202 /* Exercise.m */,
 				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
+				AA058F1C108B4C2600DEC202 /* PreferenceController.h */,
+				AA058F1D108B4C2600DEC202 /* PreferenceController.m */,
 				AA058DFB10876A9600DEC202 /* Day.h */,
 				AA058DFC10876A9600DEC202 /* Day.m */,
 				AA058DFE10876E9800DEC202 /* Food.h */,
 				AA058DFF10876E9800DEC202 /* Food.m */,
-				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -124,6 +136,7 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AA058F21108B87A900DEC202 /* Preferences.xib */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* MyLoss-Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
@@ -189,6 +202,7 @@
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 				1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */,
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
+				AA058F23108B87A900DEC202 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +219,8 @@
 				AA058E0010876E9800DEC202 /* Food.m in Sources */,
 				AA058E05108770E700DEC202 /* Exercise.m in Sources */,
 				AA058E081087721E00DEC202 /* Consumed.m in Sources */,
+				AA058F1E108B4C2600DEC202 /* PreferenceController.m in Sources */,
+				AA197E00108D2B35003CD04E /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +257,14 @@
 				2A37F4BAFDCFA73011CA2CEA /* English */,
 			);
 			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AA058F21108B87A900DEC202 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA058F22108B87A900DEC202 /* English */,
+			);
+			name = Preferences.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

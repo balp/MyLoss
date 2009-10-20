@@ -10,7 +10,7 @@
 
 @class Food;
 
-@interface Consumed : NSObject {
+@interface Consumed : NSObject <NSCoding> {
 	Food *what;
 	double ammounth;
 }

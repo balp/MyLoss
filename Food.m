@@ -66,4 +66,34 @@
   fat = newValue;
 }
 
+NSString *name;
+double weight;
+double energy;
+double fiber;
+double carbohydrate;
+double fat;
+
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[aCoder encodeObject:name forKey:@"name"];
+	[aCoder encodeDouble:weight forKey:@"weight"];
+	[aCoder encodeDouble:energy forKey:@"energy"];
+	[aCoder encodeDouble:fiber forKey:@"fiber"];
+	[aCoder encodeDouble:carbohydrate forKey:@"carbohydrate"];
+	[aCoder encodeDouble:fat forKey:@"fat"];
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super init];
+	[self setName:[aDecoder decodeObjectForKey:@"name"]];
+	[self setWeight:[aDecoder decodeDoubleForKey:@"weight"]];
+	[self setEnergy:[aDecoder decodeDoubleForKey:@"energy"]];
+	[self setFiber:[aDecoder decodeDoubleForKey:@"fiber"]];
+	[self setCarbohydrate:[aDecoder decodeDoubleForKey:@"carbohydrate"]];
+	[self setFat:[aDecoder decodeDoubleForKey:@"fat"]];
+	return self;
+}
+
 @end

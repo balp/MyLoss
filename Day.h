@@ -15,7 +15,7 @@
 /**
  * A users day
  */
-@interface Day : NSObject {
+@interface Day : NSObject <NSCoding> {
 	NSMutableArray *consumed;
 	NSMutableArray *exercised;
 	double weight;

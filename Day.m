@@ -104,4 +104,23 @@
   weight = newValue;
 }
 
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[aCoder encodeObject:consumed forKey:@"consumed"];
+	[aCoder encodeObject:exercised forKey:@"exercised"];
+	[aCoder encodeDouble:weight forKey:@"weight"];
+	[aCoder encodeDouble:energyBudget forKey:@"energyBudget"];
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super init];
+	[self setConsumed:[aDecoder decodeObjectForKey:@"consumed"]];
+	[self setExercised:[aDecoder decodeObjectForKey:@"exercised"]];
+	[self setWeight:[aDecoder decodeDoubleForKey:@"weight"]];
+	[self setEnergyBudget:[aDecoder decodeDoubleForKey:@"energyBudget"]];
+	return self;
+}
+
+
 @end

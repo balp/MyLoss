@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface Exercise : NSObject {
+@interface Exercise : NSObject <NSCoding> {
 	NSString *name;
 	NSTimeInterval duration;
 	double energy;
